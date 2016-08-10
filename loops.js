@@ -1,7 +1,9 @@
 /*## `Presidents - Accessing values in an Array`
 Declare a variable named `presidents` which contains the first 5 presidents' last names: `Washington`, `Adams`, `Jefferson`, `Madison`, `Monroe`.*/
 
+
 /*Now write a _FOR_ loop which iterates through this Array.
+
 
 Within the _FOR_ loop, use `console.log` to:
 
@@ -9,15 +11,35 @@ Within the _FOR_ loop, use `console.log` to:
 - Log what is at index `i` in the array. Use a message like `Value at Index is: ` and append the value stored within the Array at that index.*/
 
 /***bonus:** could you take the code inside of this FOR loop and encapsulate it inside of a function called `printContent` and still achieve the same result? This new function should accept two parameters.*/
+var presidents = ["Washington","Adams","Jefferson", "Madison", "Monroe"];
+for(var i = 0; i<presidents.length; i++){
+
+console.log("Value of i is: ", i); 
+
+console.log("Value at Index is: ", presidents[i]);
+}
 
 
+function printContent(names,presidents){
+for(var i = 0; i<names.length; i++){
+console.log("Value of i is: ", i); 
+console.log("Value at " + [i] +  " is " + names[i]);
+	}
+	return names;
+}
+printContent(presidents);
 
 
 
 /*Declare a variable named `stringOfNumbers` and set it's value to `''` (an empty String).*/
 
 /*Then write a _FOR_ loop that appends a Number value to that string starting from `10` all the way up to and including `20`.*/
-
+var stringOfNumbers= "";
+for(var i = 10; i < 21 ; i++){
+	stringOfNumbers += i;
+	console.log("");
+}
+console.log(stringOfNumbers);
 
 
 /***bonus:** could you take the code inside of this _FOR_ loop and encapsulate it inside of a function called `appendToString` and still achieve the same result?*/
