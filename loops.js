@@ -42,6 +42,10 @@ for(var i = 10; i < 21 ; i++){
 console.log(stringOfNumbers);
 
 
+
+
+
+
 /***bonus:** could you take the code inside of this _FOR_ loop and encapsulate it inside of a function called `appendToString` and still achieve the same result?*/
 
 
@@ -50,8 +54,13 @@ console.log(stringOfNumbers);
 Declare a variable named `evenNumberArray`.
 
 Use a _FOR_ loop to add only even numbers to an Array. Add `50` even numbers to the `evenNumberArray` starting with the value `0`.*/
-
-  
+var evenNumberArray= [];
+for(var i=0; i <99; i++){
+	if(i%2===0){
+	evenNumberArray.push(i);
+	}
+}
+  console.log(evenNumberArray);
 
 /*## `Accessing only the odd indexes of an Array - 'Not Even Brah'`
 Someone forgot to fill out this array! Oh noes...
@@ -64,11 +73,18 @@ Example result should look like:
 
 ```javascript
 `[ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]`*/
-
-
+var oopsArray=["turn","","down","","for","","what"];
+for(var i = 0; i<oopsArray.length; i++){
+	if(i%2===1){
+	oopsArray[i]= "nope";
+	}
+}
+console.log(oopsArray);
 
 /*## `Going backwards?!`
 Using a _FOR_ loop, iterate through the Array stored at `oopsArray` **backwards**. `console.log` each value in the Array.
+
+
 
 example output:
 ```
@@ -80,6 +96,13 @@ down
 nope
 turn
 ```*/
+var oopsArray=["what","","for","","down","","turn"];
+	for(var i = 0; i<oopsArray.length; i++){
+	if(i%2===1){
+	oopsArray[i]= "nope";
+	}
+}
+console.log(oopsArray);
 
 
 
